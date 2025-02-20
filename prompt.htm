@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureStore | Self Storage Solutions</title>
+    <style>
+      /* Reset and basic styling */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li,
+      nav,
+      header,
+      footer,
+      section {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+      }
+      /* Header */
+      header {
+        background: #003366;
+        color: #fff;
+        padding: 20px 0;
+      }
+      header h1 {
+        float: left;
+        margin-left: 20px;
+        font-size: 2em;
+      }
+      nav {
+        float: right;
+        margin-right: 20px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      /* Hero Section */
+      .hero {
+        background: url("./images/header.jfif") no-repeat center center/cover;
+        color: #fff;
+        height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        font-size: 1.2em;
+      }
+      .btn {
+        display: inline-block;
+        background: #003366;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 10px;
+        border-radius: 4px;
+      }
+      /* Sections */
+      section {
+        padding: 40px 0;
+      }
+      section h2 {
+        margin-bottom: 10px;
+        color: #003366;
+      }
+      section p,
+      section ul {
+        margin-bottom: 20px;
+      }
+      section ul li {
+        margin-bottom: 5px;
+      }
+      /* FAQ Prompt Container */
+      .prompt-container {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      /* Footer */
+      footer {
+        background: #f4f4f4;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9em;
+      }
+      /* Clearfix */
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container clearfix">
+        <h1>SecureStore</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Your Secure Self Storage Solution</h1>
+        <p>Safe, secure, and convenient storage for your belongings.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About SecureStore</h2>
+        <p>
+          SecureStore offers state-of-the-art self storage solutions designed
+          for your peace of mind. Whether you're moving, renovating, or just
+          need extra space, our facilities are equipped with the latest security
+          technology to keep your belongings safe.
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Climate-controlled units</li>
+          <li>24/7 video surveillance</li>
+          <li>Secure access with personalized codes</li>
+          <li>Flexible rental terms</li>
+          <li>Online booking and account management</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="prompt-container">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Ask our storage expert any question about our facilities, pricing, or
+          services.
+        </p>
+        <!-- Use the custom web component for the Salesforce prompt -->
+        <salesforce-prompt></salesforce-prompt>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: info@securestore.com | Phone: (555) 123-4567</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 SecureStore. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Load the local web component script -->
+    <script src="salesforce-prompt-component.js"></script>
+  </body>
+</html>
