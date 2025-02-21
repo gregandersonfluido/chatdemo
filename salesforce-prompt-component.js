@@ -195,13 +195,16 @@ class SalesforcePromptComponent extends HTMLElement {
 
     try {
       // Call your Cloud Function endpoint.
-      const response = await fetch(process.env.API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question }),
-      });
+      const response = await fetch(
+        "https://europe-north1-febcdogcp.cloudfunctions.net/Chat-Proxy2",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ question }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
