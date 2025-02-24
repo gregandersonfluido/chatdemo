@@ -1,0 +1,11 @@
+{
+    "chat_toggle": "Chat",
+    "greeting": "Hi! Ask me a question.",
+    "footer": "uses history for better responses.",
+    "error_message": "Error retrieving answer. Try again later.",
+    "sendButton": "Send",
+    "clearButton": "Clear",
+    "placeholder": "Type your message...",
+    "loading": "Loading...",
+    "me_label": "Me"
+}

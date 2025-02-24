@@ -1,0 +1,11 @@
+{
+    "chat_toggle": "Chatta",
+    "greeting": "Hej! Ställ gärna en fråga.",
+    "footer": "använder historik för bättre svar.",
+    "error_message": "Fel vid hämtning av svar. Försök igen senare.",
+    "sendButton": "Skicka",
+    "clearButton": "Rensa",
+    "placeholder": "Skriv ditt meddelande...",
+    "loading": "Laddar...",
+    "me_label": "Jag"
+}

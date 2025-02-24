@@ -1,0 +1,6 @@
+{
+    "BOT_NAME": "Answerbot",
+    "LOGO_URL": "../images/img.png",
+    "API_URL": "TODO:movetoenv",
+    "LANG": "en"
+}
