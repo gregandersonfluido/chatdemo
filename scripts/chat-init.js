@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('chatdemo/config.json')
+    fetch('/chatdemo/config.json')
         .then(response => response.json())
         .then(config => {
             customElements.whenDefined('chat-widget').then(() => {
