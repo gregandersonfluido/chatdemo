@@ -9,7 +9,7 @@ class ChatWidget extends HTMLElement {
 
         this.apiUrl = this.getAttribute("api-url") || "";
         this.botName = this.getAttribute("bot-name") || "Answerbot";
-        this.logoUrl = this.getAttribute("logo-url") || "../images/img.png";
+        this.logoUrl = this.getAttribute("logo-url") || "/chatdemo/images/img.png";
         // this.lang = this.getAttribute("lang") || "en"; TODO: Check if this is needed, breaks the app
 
         this.translations = {};
@@ -42,7 +42,7 @@ class ChatWidget extends HTMLElement {
 
     async loadTranslations(lang = "en") {
         try {
-            const response = await fetch(`../translations/${lang}.json`);
+            const response = await fetch(`/chatdemo/translations/${lang}.json`);
             if (!response.ok) throw new Error("Translation file not found");
             return await response.json();
         } catch (error) {
